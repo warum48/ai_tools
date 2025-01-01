@@ -104,7 +104,7 @@ export default function Home() {
   return (
     <div className="grid grid-cols-2 gap-4 p-4">
       <div>
-        {key}
+       
         <textarea
           className="w-full  p-2 border border-gray-300 rounded text-gray-600"
           placeholder="Enter text to translate"
