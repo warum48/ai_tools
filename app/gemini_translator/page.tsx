@@ -52,7 +52,7 @@ export default function Home() {
   };*/
 
   const [result, setResult] = React.useState<AIResponse | null>(null);
-  const key = process.env.NEXT_PUBLIC_GEMINI_API_KEY_GENERATED || '';
+  const key = process.env.NEXT_PUBLIC_GEMINI_API_KEY || '';
 
   const handleTranslate = async () => {
     let promptText = `translate text to Russian (from here to the words '/end of the text/'): ${inputText} /end of the text/,  Return the result in json format. If word has few meanings give all of them in the array . 
